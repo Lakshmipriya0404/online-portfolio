@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rja from "@/public/rja.png";
+import pp from "@/public/pp.png";
+import npm from "@/public/npm.png";
 
 export const links = [
   {
@@ -35,52 +35,51 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "B.E Computer Science Engineering",
+    location: "Chennai, India",
+    description: "CGPA: 9.1",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020-2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Engineer",
+    location: "Kriyadocs, Chennai",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Collaborated on Python and machine learning open-source projects for author matching. Developed backend features using Python, Flask and PostgreSQL, emphasizing efficient data management and code quality through rigorous code reviews.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "FEB 2023 - JUL 2023",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Software Developer",
     location: "Houston, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developed a React Native Smart Bin mobile app for real-time data visualization and notifications, with an Express.js backend, MongoDB Cloud, and Google Firebase for updates and JWT authentication.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "FEB 2024 - APR 2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Reader's Junction",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Full-stack app for book collection management and user connection, featuring registration, email validation, and book management.",
+    tags: ["Angular", "Spring Boot", "Spring Security", "Postgres", "Docker"],
+    imageUrl: rja,
   },
   {
-    title: "rmtDev",
+    title: "Playlist Porter",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "App enabling user to convert Spotify playlists to YouTube playlists securely using OAuth 2.0 authentication.",
+    tags: ["React", "Material-UI", "Flask", "Google APIs", "Spotify API"],
+    imageUrl: pp,
   },
   {
-    title: "Word Analytics",
+    title: "React-Data-Sync",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "NPM package for efficient data synchronization between React components and external sources, enhancing data fetching, caching, and state synchronization.",
+    tags: ["React", "TypeScript", "NPM"],
+    imageUrl: npm,
   },
 ] as const;
 
@@ -89,19 +88,18 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "Java",
+  "Angular",
+  "Spring Boot",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
+  "Flask",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;
