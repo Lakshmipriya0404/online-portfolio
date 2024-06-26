@@ -62,6 +62,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Reader's Junction",
+    link: "https://github.com/Lakshmipriya0404/readers-junction-app",
     description:
       "Full-stack app for book collection management and user connection, featuring registration, email validation, and book management.",
     tags: ["Angular", "Spring Boot", "Spring Security", "Postgres", "Docker"],
@@ -69,6 +70,7 @@ export const projectsData = [
   },
   {
     title: "Playlist Porter",
+    link: "https://playlist-porter.netlify.app/",
     description:
       "App enabling user to convert Spotify playlists to YouTube playlists securely using OAuth 2.0 authentication.",
     tags: ["React", "Material-UI", "Flask", "Google APIs", "Spotify API"],
@@ -76,6 +78,7 @@ export const projectsData = [
   },
   {
     title: "React-Data-Sync",
+    link: "https://www.npmjs.com/package/react-data-sync",
     description:
       "NPM package for efficient data synchronization between React components and external sources, enhancing data fetching, caching, and state synchronization.",
     tags: ["React", "TypeScript", "NPM"],
