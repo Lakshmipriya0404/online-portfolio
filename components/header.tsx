@@ -2,14 +2,16 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useFirebaseData } from "@/context/firebase-data-context";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+
+  const { links } = useFirebaseData();
 
   return (
     <header className="z-[999] relative">

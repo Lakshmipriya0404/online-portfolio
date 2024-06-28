@@ -42,7 +42,6 @@ export default function About() {
         sci-fi movies, listening to podcast and reading books. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about <span className="font-medium">the art of blogging</span>.
-        I'm also expanding my culinary skills.
       </p>
     </motion.section>
   );

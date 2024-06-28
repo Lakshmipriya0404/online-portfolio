@@ -33,7 +33,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experienceData = [
   {
     title: "B.E Computer Science Engineering",
     location: "Chennai, India",
@@ -51,7 +51,7 @@ export const experiencesData = [
   },
   {
     title: "Software Developer",
-    location: "Houston, TX",
+    location: "Garuda, Chennai",
     description:
       "Developed a React Native Smart Bin mobile app for real-time data visualization and notifications, with an Express.js backend, MongoDB Cloud, and Google Firebase for updates and JWT authentication.",
     icon: React.createElement(FaReact),
@@ -59,7 +59,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectData = [
   {
     title: "Reader's Junction",
     link: "https://github.com/Lakshmipriya0404/readers-junction-app",

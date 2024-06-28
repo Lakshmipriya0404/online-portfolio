@@ -7,19 +7,27 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { useFirebaseData } from "@/context/firebase-data-context";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
-
+  const { experienceData } = useFirebaseData();
+  const iconMap: { [key: string]: JSX.Element } = {
+    LuGraduationCap: React.createElement(LuGraduationCap),
+    CgWorkAlt: React.createElement(CgWorkAlt),
+    FaReact: React.createElement(FaReact),
+  };
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+        {experienceData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               visible={true}
@@ -38,7 +46,7 @@ export default function Experience() {
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
-              icon={item.icon}
+              icon={iconMap[item.icon]}
               iconStyle={{
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",

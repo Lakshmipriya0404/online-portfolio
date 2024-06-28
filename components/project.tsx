@@ -1,12 +1,15 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import { TypeProject } from "@/lib/types";
+import rja from "@/public/rja.png";
+import pp from "@/public/pp.png";
+import npm from "@/public/npm.png";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = TypeProject;
 
 export default function Project({
   title,
@@ -22,6 +25,11 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const imageMapping: { [key: string]: StaticImageData } = {
+    rja,
+    pp,
+    npm,
+  };
 
   return (
     <motion.div
@@ -52,7 +60,7 @@ export default function Project({
           </div>
 
           <Image
-            src={imageUrl}
+            src={imageMapping[imageUrl]}
             alt="Project I worked on"
             quality={95}
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
